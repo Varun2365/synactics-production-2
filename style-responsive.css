@@ -1,0 +1,236 @@
+@media only screen and (max-width:1220px){
+    .main-quote{
+        /* width: 70rem; */
+        margin-bottom: 2rem;
+        /* display: none; */
+    }
+    .main-contact{
+        flex-direction: column;
+        padding: 0 2rem;
+        align-items: center;
+    }
+    .main-contact{
+        width: 100%;
+    }
+    .main-contact-left{
+        width: 70%;
+    }
+    .contact-form{
+        margin-top: 4rem;
+        width: 70%;
+    }
+    .logo-card{
+        flex-basis: 30%;
+        margin: 1rem 0;
+        /* height: 15rem; */
+    }
+    .why-bottom{
+        margin-top: 5rem;
+        /* background-color: red; */
+    }
+}
+@media only screen and (max-width: 1145px){
+    .test-wrapper{
+        padding: 0 2rem;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .test-card{
+        flex-basis: 80%;
+        margin-bottom: 4rem;
+        height: 19rem;
+    }
+    .test-card-img{
+        width:4rem;
+        height: 4rem;
+    }
+    .test-card-bottom{
+        justify-content: start;
+    }
+
+}
+@media only screen and (max-width: 1000px){
+    .main-home{
+        flex-direction: column;
+    }
+    .main-home-left{
+        width: 100%;
+        padding-top: 4rem;
+    }
+    .main-home-right{
+        width: 100%;
+    }
+ 
+    .quote{
+        display: none;
+    }
+
+    .segment{
+        padding: 3rem 5rem;
+    }
+    .why-card-wrapper{
+        flex-wrap: wrap;
+    }
+    .why-card{
+        flex-basis: 100%;
+        margin: 2rem 0;
+    }
+    .plans-wrapper{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
+    .plan-card{
+        flex-basis: 48%;
+        margin: 1.5rem 0;
+    }
+    .main-about-us{
+        flex-direction: column;
+        height: auto;
+    }
+    .main-about-us-left{
+        width: 100%;
+        display: none;
+
+    }
+    .main-about-us-right{
+        width: 100%;
+        padding: 0 0 0 0 ;
+        height: auto;
+        justify-content: start;
+        margin-bottom: 5rem;
+        margin-top: 5rem;
+    }
+    .main-footer{
+       flex-direction: column; 
+    }
+    .footer-left{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .footer-right{
+        flex-direction: column;
+        margin: 1rem 0;
+    }
+    .footer-card{
+        width: 100%;
+        align-items: start;
+        margin: 2rem 0 0 0 ;
+        /* background-color: red; */
+    }
+   
+}
+@media only screen and (max-width: 840px){
+    .plans-wrapper{
+        align-items: center;
+        justify-content: center;
+    }
+    .plan-card{
+        flex-basis: 70%;
+        height: 33rem;
+        border-radius: 10px;
+    }
+    .main-contact-left{
+        width: 100%;
+    }
+    .contact-form{
+        width: 100%;
+    }
+    .main-testimonial{
+        padding-left: 0rem;
+        padding-right:0rem;
+    }
+}
+@media only screen and (max-width: 750px){
+    .test-card{
+        flex-basis: 100%;
+    }
+    .main-testimonial{
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+}
+@media only screen and (max-width: 700px){
+    html{
+        font-size: 14px;
+    }
+    nav{
+        height: 5vh;
+    }
+    .plan-card{
+        flex-basis: 80%;
+        height: 38rem;
+        border-radius: 10px;
+    }
+   
+ 
+}
+@media only screen and (max-width:600px){
+    .segment{
+        padding: 3rem 2rem;
+    }
+    .plan-card{
+        flex-basis: 100%;
+    }
+    nav{
+        height: 8vh;
+    }
+    .why-card{
+        flex-basis: 80%;
+        /* height: 45rem; */
+    }
+    .why-card-wrapper{
+        padding: 0 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .test-wrapper{
+        padding-left:1rem ;
+        padding-right:1rem ;
+    }
+    .main-home{
+        justify-content: center;
+        /* height: 40vh; */
+        align-items: start;
+    }
+    .main-home-left{
+        height: auto;
+        margin: 4rem 0;
+    }
+    .main-home-right{
+        height: 50%;
+    }
+}
+@media only screen and (max-width: 525px){
+    html{
+        font-size: 11px;
+    }
+    nav{
+        height: 8vh;
+    }
+    .why-card{
+        flex-basis: 100%;
+    }
+    .heroHead{
+        font-size: 3.7rem;
+    }
+    .subHead{
+        font-size: 2.2rem;
+    }
+    .test-card{
+        height: 21rem;
+    }
+    .plan-card{
+        flex-basis: 80%;
+    }
+    .plans-head{
+        font-size: 2rem;
+    }
+    .test-head{
+        font-size: 2.2rem;
+    }
+    .main-nav-right-button{
+        display: none;
+    }
+}

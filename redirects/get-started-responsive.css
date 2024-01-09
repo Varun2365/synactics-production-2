@@ -1,0 +1,69 @@
+@media only screen and (max-width: 1157px){
+    .service-wrapper{
+        justify-content: start;
+    }
+}
+@media only screen and (max-width: 777px){
+    .main-form-section{
+        width: 100%;
+        padding: 14vh 1.8rem 1.8rem 1.8rem;
+}
+    form{
+        width: 100%;
+    }
+    nav{
+        height: 8vh;
+    }
+}
+@media only screen and (max-width: 550px){
+    html{
+        font-size: 13px;
+    }
+    .flex{
+        flex-direction: column;
+    }
+    #name,#phone{
+        width: 100%;
+    }
+    .main-head{
+        font-size: 1.3rem;
+    }
+    .main-subhead{
+        font-size: 2.6rem;
+    }
+}
+@media only screen and (max-width: 550px){
+    .form-btn-wrapper{
+        flex-direction: column;
+        align-items: start;
+    }
+    .submit{
+        flex-basis: 100%;
+        width: 100%;
+        margin-bottom: 1rem;
+        margin-right: 0;
+    }
+    .reset{
+        flex-basis: 100%;
+        width: 100%;
+        margin-bottom: 1rem;
+        margin-left: 0;
+    }
+    .service-wrapper{
+        justify-content: space-between;
+    }
+    .service-card{
+        margin: 1rem 0 1rem 0 ;
+        flex-basis: 48%;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 439px){
+    .service-card{
+        margin: 1rem 0 1rem 0 ;
+        flex-basis: 48%;
+        text-align: center;
+        font-size: 0.78rem;
+        padding: 1rem 0.2rem;
+    }
+}

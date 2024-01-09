@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synactics - Get Started</title>
+    <link rel="stylesheet" href="get-started.css">
+    <link rel="stylesheet" href="get-started-responsive.css">
+</head>
+<body>
+    <nav>
+        <div class="main-nav segment">
+            <div class="main-nav-left">
+                <a href="#" id="head"><h1 class="logo heading">Synactics</h1></a>
+            </div>
+            <div class="main-nav-right">
+                <div class="main-nav-right-links">
+                    <ul>
+                        <a href="../index.html#services">
+                            <li>SERVICES</li>
+                        </a>
+                        <a href="../index.html#about">
+                            <li>ABOUT</li>
+                        </a>
+                    </ul>
+                </div>
+                <!-- <div class="main-nav-right-button"><a href="#contact"><button class="nav-button">Contact Us</button></a></div> -->
+            </div>
+        </div>
+    </nav>
+    <div class="form-section">
+        <div class="main-form-section segment">
+            <h1 class="heading main-head anim">Let Us Know Us Your Requirements &</h1>
+            <h1 class="heading main-subhead anim">Get A Free <span id="purple">Quote</span> </h1>
+            <form action="" id="form">
+                <div class="flex">
+
+                    <input type="text" id="name" placeholder="Name..." class="anim">
+                    <input type="text" id="phone" placeholder="Phone..." class="anim">
+                </div>
+                <input type="text" id="email" placeholder="Email Id..." class="anim">
+                <div class="service-option">
+                    <h3 class="anim">Select Services You Wanna Opt For (Click to Select)</h3>
+                    <div class="service-wrapper">
+                        <div class="service-card anim active-card order" id="Web Design" onclick="changeState('Web Design')"">WEB DESIGN</div>
+                        <div class="service-card anim" id="E-Commerce" onclick="changeState('E-Commerce')"">E-COMMERCE</div>
+                        <div class="service-card anim" id="UI" onclick="changeState('UI')"">UI/UX DESIGN</div>
+                        <div class="service-card anim" id="Graphics Designing" onclick="changeState('Graphics Designing')"">GRAPHICS DESIGN</div>
+
+                        <div class="service-card anim" id="Web Hosting" onclick="changeState('Web Hosting')"">WEB HOSTING</div>
+                        <div class="service-card anim" id="SEO/SMO" onclick="changeState('SEO/SMO')"">SEO/SMO</div>
+                        <div class="service-card anim" id="Digital Marketing" onclick="changeState('Digital Marketing')"">DIGITAL MARKETING</div>
+                        <div class="service-card anim" id="Content Writing" onclick="changeState('Content Writing')"">CONTENT WRITING</div>
+                    </div>
+                </div>
+                <h3 class="anim">Describe your project here</h3>
+
+                <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="Your Query..."
+                        class="righta anim"></textarea>
+            </form>
+            <div class="form-btn-wrapper">
+                    <button class="submit righta anim" onclick="mail()">SUBMIT</button>
+                    <button class="reset righta anim" onclick="reset()">RESET</button>
+                </div>
+        </div>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+
+    ScrollReveal({
+        reset: false,
+        distance: '40px',
+        duration: 1000,
+        delay: 400
+    });
+    ScrollReveal().reveal('.anim', { delay: 300, interval: 50, origin: 'bottom' })
+
+
+
+
+    function linearSearch(element, list) {
+    var found = false; 
+    for (var i = 0; i < list.length; i++) {
+        var item = list[i];
+        if (item == element) {
+            found = true;
+            break; 
+        }
+    }
+    return found;
+}
+function validateForm() {
+        var name = document.getElementById("name").value;
+        var phone = document.getElementById("phone").value;
+        var email = document.getElementById("email").value;
+        var msg = document.getElementById("w3review").value;
+        var orders = document.querySelectorAll(".order");
+        if (name.length != 0 && phone.length == 10 && email.includes("@") && msg.length != 0 && orders.length!=0) {
+            var check = true;
+        }
+        else {
+            if (name.length == 0) {
+                alert("Please Fill Out Name Section");
+            }
+            if (phone.length != 10) {
+                alert("Please fill 10 Digit Mobile Number");
+            }
+            if (email.includes("@") == false) {
+                alert("Please enter a valid email address");
+            }
+            if (msg.length == 0) {
+                alert("Please leave a message too!")
+            }
+            if(orders.length == 0){
+                alert("Please select atleast one service")
+            }
+            var check = false;
+        }
+        return check;
+    }
+    function mail() {
+        if (validateForm() == true) {
+            sendMail();
+        }
+        else {
+            console.log("Form Error")
+        }
+    }
+    function sendMail() {
+        var name = document.getElementById("name").value;
+        var phone = document.getElementById("phone").value;
+        var email = document.getElementById("email").value;
+        var msg = document.getElementById("w3review").value;
+        var orders = document.querySelectorAll(".order");
+        var orderMsg = ""
+        if(orders.length!=0){
+
+            for(i=0;i<orders.length;i++){
+                var current = orders[i];
+                orderMsg += `${i+1}. ${current.id}  <br> \n`
+            }
+        }
+
+        Email.send({
+            SecureToken: "fe71505f-ae07-4f17-a405-76d91605d547",
+            To: 'in.synactics@gmail.com',
+            From: "in.synactics@gmail.com",
+            Subject: "Synactics Query Home Page",
+            Body: `Name:${name}<br>\nPhone:${phone}<br>\nEmail:${email}\n<br>Message:${msg}\n<br>Opted for: ${orderMsg}\n<br>`
+        }).then(
+            message => alert("We've recieved your query and our team will contact you soon!")
+        );
+    }
+    function reset() {
+        var form = document.getElementById("form");
+        form.reset();
+    }
+function changeState(entity) {
+    console.log(`Clicked ${entity}`)
+    let element = document.getElementById(entity);
+    let classList = element.classList;
+    if (linearSearch("active-card", classList)) {
+        console.log("Entered if")
+        element.classList.remove("active-card");
+        element.classList.remove("order");
+    } else {
+        console.log("Entered else")
+        element.classList.add("active-card");
+        element.classList.add("order");
+    }
+}
+
+    </script>
+</body>
+</html>
