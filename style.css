@@ -427,7 +427,7 @@ nav {
 
 
 
-.about-btn{
+/* .about-btn{
     background-color: #fff;
     color: var(--pale-blue);
     padding: 1rem 2.5rem 1rem 2.5rem;
@@ -442,7 +442,7 @@ nav {
 .about-btn:hover{
     color: var(--text-black);
     border-color: var(--text-black);
-}
+} */
 .about-us{
     width: 100%;
     height: auto;
