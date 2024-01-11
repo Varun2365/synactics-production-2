@@ -1033,8 +1033,8 @@ nav {
         width: 80%;
     }
     .main-hero-left{
-        padding-left: 1.3rem;
-        padding-right: 1.3rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
     .quest{
         padding: 0 3rem;
@@ -1061,6 +1061,7 @@ nav {
     .tech-card-wrapper{
         align-items: start;
         justify-content: start;
+        padding: 0 2rem;
     }
     .tech-card{
         margin-bottom: 2rem;
@@ -1071,14 +1072,27 @@ nav {
         margin: auto;
         margin-top: 2rem;
     }
-}
-@media only screen and (max-width:385px){
+    .hero-head{
+        font-size: 2.5rem;
+    }
     .hero-btn{
-        padding: 1rem 2rem;
-        /* background-color: red; */
+        padding: 0.8rem 1.9rem;
+        font-size: 0.8rem;
     }
-    .hero-btn2{
-        padding: 1rem 2rem;
-        /* background-color: red; */
+    .hero-subhead{
+        font-size: 1.1rem;
     }
+    .hero-subhead2{
+        font-size: 1rem;
+    }
+    .plan-card{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:340px){
+    .main-hero-left{
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+
 }
