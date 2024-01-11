@@ -1,16 +1,47 @@
-=======
+
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
+    <head>
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Synactics</title>
+    <!-- Add meta title and description for better SEO -->
+    <title>Synactics - Your One-Stop Solution for Web Development, Design, SEO, SMO, Digital Marketing, and Hosting</title>
+    <meta name="description" content="Synactics offers web development, design, SEO, SMO, digital marketing, and hosting services. We provide customizable features, creative design, and lightning-fast speed to grow your business.">
+
+    <!-- Add more meta tags for better SEO -->
+    <meta name="keywords" content="web development, design, SEO, SMO, digital marketing, hosting, customizable features, UI/UX design, graphics designing, content writing, website optimization, online presence, responsive web design, social media optimization, SEO strategies, web hosting solutions, UI/UX best practices, e-commerce development, creative digital solutions, professional content writing, digital marketing agency, branding services, affordable SEO packages, mobile-friendly websites, graphic design services, effective SEO techniques, content marketing, search engine ranking, social media marketing, website security solutions">    <meta name="author" content="Synactics">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Add a canonical link to avoid duplicate content issues -->
+    <link rel="canonical" href="https://synactics.in">
+
+    <!-- Specify Open Graph meta tags for better social media sharing -->
+    <meta property="og:title" content="Synactics - Your One-Stop Solution for Digital Services">
+    <meta property="og:description" content="Synactics offers web development, design, SEO, SMO, digital marketing, and hosting services.">
+    <!-- <meta property="og:image" content="url_to_your_image.jpg"> -->
+    <meta property="og:url" content="https://synactics.in">
+
+    <!-- Add a favicon for better user experience -->
+    
+    <!-- Add your stylesheet links -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style-responsive.css">
 </head>
 
 <body>
+    <div class="mobile-menu">
+        <div class="cross" onclick="hideMenu()"></div>
+        <div class="link-holder">
+            <ul>
+                <a href="#" onclick="hideMenu()"><li>HOME</li></a>
+                <a href="#services" onclick="hideMenu()"><li>SERVICES</li></a>
+                <a href="#about" onclick="hideMenu()"><li>ABOUT</li></a>
+                <a href="redirects/get-started.html" onclick="hideMenu()"><li>CONTACT</li></a>
+            </ul>
+        </div>
+    </div>
     <nav>
         <div class="main-nav segment">
             <div class="main-nav-left">
@@ -29,6 +60,7 @@
                 </div>
                 <div class="main-nav-right-button"><a href="#contact"><button class="nav-button">Contact Us</button></a></div>
             </div>
+            <div class="ham" onclick="showMenu()"></div>
         </div>
     </nav>
     <div class="home">
@@ -122,10 +154,10 @@
                     digital marketing. With a focus on trust, innovation, and client satisfaction, we transform ideas
                     into impactful online experiences.</p>
                 <div class="hero-button-wrapper">
-                    <button class="hero-get-started-button about-anim">
+                    <a href="redirects/get-started.html" style="text-decoration:none;"><button class="hero-get-started-button about-anim">
                         <div class="btn-flex">Request Quotation <div class="rightArrow"></div>
                         </div>
-                    </button>
+                    </button></a>
                     <button class="hero-view-plans about-anim about-btn">Read More</button>
                 </div>
             </div>
@@ -145,7 +177,7 @@
                             <p class="plan-card-info">At synactics, we provide Web-Development services with utmost UI
                                 experience and all just at a very reasonable</p>
                         </div>
-                        <button class="button-plans">Get Pricing & Know More</button>
+                        <a href="redirects/web-development.html" style="text-decoration: none; width: 100%;" target="_blank"><button class="button-plans">Get Pricing & Know More</button></a>
                     </div>
                 </div>
                 <div class="plan-card">
@@ -306,6 +338,7 @@
                     <input type="text" id="name" placeholder="Name..." class="righta">
                     <input type="text" id="phone" placeholder="Phone No..." class="righta">
                     <input type="text" id="email" placeholder="Email Id..." class="righta">
+                    <input type="text" id="email" placeholder="Company..." class="righta">
                     <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="Your Query..."
                         class="righta"></textarea>
                 </form>
@@ -450,6 +483,14 @@
     function reset() {
         var form = document.getElementById("form");
         form.reset();
+    }
+    function showMenu(){
+        var menu = document.querySelector(".mobile-menu");
+        menu.style.transform = 'translateX(0%)';
+    }
+    function hideMenu(){
+        var menu = document.querySelector(".mobile-menu");
+        menu.style.transform = 'translateX(100%)';
     }
 </script>
 

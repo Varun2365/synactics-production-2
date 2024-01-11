@@ -8,24 +8,36 @@
     <link rel="stylesheet" href="get-started-responsive.css">
 </head>
 <body>
+    <div class="mobile-menu">
+        <div class="cross" onclick="hideMenu()"></div>
+        <div class="link-holder">
+            <ul>
+                <a href="../index.html" onclick="hideMenu()"><li>HOME</li></a>
+                <a href="../index.html#services" onclick="hideMenu()"><li>SERVICES</li></a>
+                <a href="../index.html#about" onclick="hideMenu()"><li>ABOUT</li></a>
+                <!-- <a href="redirects/get-started.html" onclick="hideMenu()"><li>CONTACT</li></a> -->
+            </ul>
+        </div>
+    </div>
     <nav>
         <div class="main-nav segment">
             <div class="main-nav-left">
-                <a href="#" id="head"><h1 class="logo heading">Synactics</h1></a>
+                <a href="#" class="head"><h1 class="logo heading">Synactics</h1></a>
             </div>
             <div class="main-nav-right">
                 <div class="main-nav-right-links">
                     <ul>
-                        <a href="../index.html#services">
+                        <a href="#services">
                             <li>SERVICES</li>
                         </a>
-                        <a href="../index.html#about">
+                        <a href="#about">
                             <li>ABOUT</li>
                         </a>
                     </ul>
                 </div>
-                <!-- <div class="main-nav-right-button"><a href="#contact"><button class="nav-button">Contact Us</button></a></div> -->
+                <div class="main-nav-right-button"><a href="#contact"><button class="nav-button">Contact Us</button></a></div>
             </div>
+            <div class="ham" onclick="showMenu()"></div>
         </div>
     </nav>
     <div class="form-section">
@@ -64,6 +76,64 @@
                 </div>
         </div>
     </div>
+    <footer class="footer">
+        <div class="main-footer segment">
+            <div class="footer-left">
+                <h5 class="heading footer-head topa">Synactics</h5>
+                <p class="footer-info topa">One stop solution for all your digital queries.
+                </p>
+                <div class="social-link-wrapper">
+                    <a href="#">
+                        <div class="link-card topa">
+                            <div class="instagram insta"></div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="link-card topa">
+                            <div class="instagram twitter"></div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="link-card topa">
+                            <div class="instagram pint"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-card topa">
+                    <div class="footer-card-head">Links</div>
+                    <div class="footer-card-links">
+                        <a href="#" class="footer-links">About</a>
+                        <a href="#" class="footer-links">Contact</a>
+                        <a href="#" class="footer-links">Hire Us</a>
+                    </div>
+                </div>
+                <div class="footer-card topa">
+                    <div class="footer-card-head">Services</div>
+                    <div class="footer-card-links">
+                        <a href="#" class="footer-links">Web Development</a>
+                        <a href="#" class="footer-links">Graphics Designing</a>
+                        <a href="#" class="footer-links">SEO</a>
+                        <a href="#" class="footer-links">UI/UX</a>
+                        <a href="#" class="footer-links">Content Writing</a>
+                        <a href="#" class="footer-links">Digital Marketing</a>
+                        <a href="#" class="footer-links">Web Hosting</a>
+                        <a href="#" class="footer-links">E-Commerce</a>
+                    </div>
+                </div>
+                <div class="footer-card topa">
+                    <div class="footer-card-head">Contact</div>
+                    <div class="footer-card-links">
+                        <a href="#" class="footer-links">+91 9643606839</a>
+                        <a href="#" class="footer-links">+91 9718282109</a>
+                        <a href="#" class="footer-links">Email: <br>in.synactics@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="after-footer topa">&copy; Powered by Synactics 2024</div>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
@@ -170,7 +240,14 @@ function changeState(entity) {
         element.classList.add("order");
     }
 }
-
+function showMenu(){
+        var menu = document.querySelector(".mobile-menu");
+        menu.style.transform = 'translateX(0%)';
+    }
+    function hideMenu(){
+        var menu = document.querySelector(".mobile-menu");
+        menu.style.transform = 'translateX(100%)';
+    }
     </script>
 </body>
 </html>
