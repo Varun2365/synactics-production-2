@@ -251,7 +251,10 @@ nav {
     background-position: center;
     animation: float 3s ease-in-out infinite;
 }
-
+.ecomm{
+    background-image: url(../assets/images/ecommerce.svg);
+    width: 30%;
+}
 .hero-head {
     font-size: 3.5rem;
     font-weight: 500;
@@ -567,6 +570,12 @@ nav {
 .resp2 {
     background-image: url(../assets/images/resp2.svg);
 }
+.resp-c {
+    background-image: url(../assets/images/resp-c.jpg);
+}
+.resp-c2 {
+    background-image: url(../assets/images/resp-c2.jpg);
+}
 
 .plans {
     display: flex;
@@ -644,6 +653,15 @@ nav {
 
 .custom-img {
     background-image: url(../assets/images/custom.jpg);
+}
+.ecom1 {
+    background-image: url(../assets/images/ecom1.jpg);
+}
+.ecom2 {
+    background-image: url(../assets/images/ecom2.jpg);
+}
+.ecom3 {
+    background-image: url(../assets/images/ecom3.jpg);
 }
 
 .card-info {
