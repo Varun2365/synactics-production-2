@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synactics - UI/UX</title>
+    <link rel="stylesheet" href="web-development.css">
+</head>
+
+<body>
+    <div class="mobile-menu">
+        <div class="cross" onclick="hideMenu()"></div>
+        <div class="link-holder">
+            <ul>
+                <a href="../index.html" onclick="hideMenu()">
+                    <li>HOME</li>
+                </a>
+                <a href="../index.html#services" onclick="hideMenu()">
+                    <li>SERVICES</li>
+                </a>
+                <a href="../index.html#about" onclick="hideMenu()">
+                    <li>ABOUT</li>
+                </a>
+                <a href="get-started.html" onclick="hideMenu()">
+                    <li>CONTACT</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <nav class="">
+        <div class="main-nav segment anim">
+            <div class="main-nav-left">
+                <a href="../index.html" class="head">
+                    <h1 class="logo heading">Synactics</h1>
+                </a>
+            </div>
+            <div class="main-nav-right">
+                <div class="main-nav-right-links">
+                    <ul>
+                        <a href="#plans">
+                            <li>PLANS</li>
+                        </a>
+                        <a href="#faq">
+                            <li>FAQ's</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="main-nav-right-button"><a href="../index.html#contact"><button class="nav-button">Contact
+                            Us</button></a>
+                </div>
+            </div>
+            <div class="ham" onclick="showMenu()"></div>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div class="main-hero segment">
+            <div class="main-hero-left">
+                <h2 class="heading hero-subhead anim">Synactics -</h2>
+                <h1 class="heading hero-head anim"> <span class="purple">UI/UX </span> Designing</h1>
+                <h2 class="heading hero-subhead2 anim">
+
+
+                    UI/UX Design blends art and science for visually appealing, user-friendly digital experiences,
+                    ensuring efficiency and enjoyment across platforms.
+                </h2>
+                <div class="hero-btn-flex anim">
+                    <a href="get-started.html" style="text-decoration:none;" onclick="makeActive('UI')"><button
+                            class="hero-btn">Place Order</button></a>
+                    <!-- <button class="hero-btn2">Read More</button> -->
+                </div>
+            </div>
+            <div class="main-hero-right uiux anim"></div>
+        </div>
+    </div>
+
+
+    <div class="approach">
+        <div class="main-approach segment">
+            <h2 class="heading approach-head anim">Our Approach</h2>
+            <div class="approach-card-wrapper">
+                <div class="why-card cardOne anim">
+                    <div class="why-card-img one"></div>
+                    <div class="why-card-text">
+                        <h2 class="heading why-card-head">User-Centric Approach</h2>
+                        <p class="why-card-info">Prioritizing user needs and preferences, our design revolves around
+                            creating interfaces that resonate with and cater to user expectations.</p>
+                    </div>
+                </div>
+                <div class="why-card cardTwo anim">
+                    <div class="why-card-img two"></div>
+                    <div class="why-card-text">
+                        <h2 class="heading why-card-head">Iterative Prototyping</h2>
+                        <p class="why-card-info">We refine designs iteratively, using prototypes and feedback to ensure
+                            a user-aligned final product.
+                        </p>
+                    </div>
+                </div>
+                <div class="why-card cardThree anim">
+                    <div class="why-card-img three"></div>
+                    <div class="why-card-text">
+                        <h2 class="heading why-card-head">Design Harmony</h2>
+                        <p class="why-card-info">We seamlessly blend visual appeal with practical functionality,
+                            prioritizing a user-friendly experience through intuitive design.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- <h2 class="heading hero-subhead2 approach-subhead">At Synactics, we innovate collaboratively in
+                web development. Understanding client goals, blending tech with creativity, and ensuring transparency
+                define our approach for a seamless partnership.</h2> -->
+        </div>
+    </div>
+
+
+
+
+    <div class="tech-use">
+        <div class="main-tech-use segment">
+            <h1 class="heading tech-head anim">Tech <span class="purple">Stack</span> For UI/UX</h1>
+            <div class="tech-card-wrapper">
+                <div class="tech-card anim">
+                    <p class="tech-headi">Adobe XD</p>
+                    <p class="tech-headi">Sketch</p>
+                    <p class="tech-headi">Figma</p>
+                    <p class="tech-headi">Photoshop</p>
+                    <p class="tech-headi">Canva</p>
+                </div>
+                <div class="tech-card anim">
+                    <p class="tech-headi">Pexels</p>
+                    <p class="tech-headi">Undraw</p>
+                    <p class="tech-headi">Freepik</p>
+                    <p class="tech-headi">Pixabay</p>
+                    <p class="tech-headi">Mixkit</p>
+                </div>
+                <div class="tech-card anim">
+                    <p class="tech-headi">Google Fonts</p>
+                    <p class="tech-headi">Adobe Fonts</p>
+                    <!-- <p class="tech-headi">Google Analytics</p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="plans" id="plans">
+        <div class="main-plans segment">
+            <h1 class="heading responsive-head"><span class="purple">Work Showcase</span> For You</h1>
+            <div class="ui-card-wrapper">
+                <div class="ui-card ui1"></div>
+                <div class="ui-card ui2"></div>
+                <div class="ui-card ui3"></div>
+                <div class="ui-card ui4"></div>
+                <div class="ui-card ui5"></div>
+                <div class="ui-card ui6"></div>
+                <div class="ui-card ui7"></div>
+                <div class="ui-card ui8"></div>
+                <div class="ui-card ui9"></div>
+            </div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="main-responsive segment">
+            <h1 class="heading responsive-head anim">Importance Of UI/UX</h1>
+            <h3 class="heading quest anim">Driving Growth with Exceptional UI/UX Design</h3>
+            <h3 class="heading ans anim">
+                Elevating your business through outstanding UI/UX design is a strategic investment. A seamless and
+                visually engaging user experience enhances engagement, satisfaction, and trust. It translates to higher
+                conversion rates, increased customer loyalty, and a competitive edge in the digital landscape. With a
+                focus on intuitive design and accessibility, UI/UX excellence becomes a key driver for business growth
+                in today's dynamic market.</h3>
+            <!-- <h3 class="heading ans">
+                Fortunately, all the websites we develop are inherently responsive, meaning they automatically adjust to
+                varying screen widths. Simply put, this feature is a crucial aspect for SEO, playing a pivotal role in
+                enhancing online visibility and contributing to the overall growth of your business.
+            </h3> -->
+            <!-- <div class="resp-img-wrapper">
+                <div class="resp-img ui-res anim"></div>
+                <div class="resp-img ui-res-2 anim"></div>
+            </div> -->
+        </div>
+    </div>
+
+
+    <div class="faq" id="faq">
+        <div class="main-faq segment">
+            <h1 class="heading faq-head anim">Frequently Asked Questions</h1>
+            <div class="quest-wrapper">
+
+
+                <div class="question-card" id="qone" onclick="display('qone')">
+                    <div class="question-top">
+                        <div class="main-q">
+
+                            <h4 class="main-question">1. Why is UI/UX design important for my business?</h4>
+                        </div>
+                        <div class="arrow"></div>
+                    </div>
+                    <div class="question-hidden"> UI/UX design is crucial as it directly impacts user satisfaction,
+                        engagement, and overall brand perception. It ensures a positive and seamless experience,
+                        contributing to business success.</div>
+                </div>
+                <div class="question-card" id="qtwo" onclick="display('qtwo')">
+                    <div class="question-top">
+                        <div class="main-q">
+
+                            <h4 class="main-question">2. What does the UI/UX design process involve?</h4>
+                        </div>
+                        <div class="arrow"></div>
+                    </div>
+                    <div class="question-hidden">The process includes user research, wireframing, prototyping, visual
+                        design, and testing. It aims to create interfaces that are not only visually appealing but also
+                        intuitive and user-friendly.</div>
+                </div>
+                <div class="question-card" id="qthree" onclick="display('qthree')">
+                    <div class="question-top">
+                        <div class="main-q">
+
+                            <h4 class="main-question">3. How can UI/UX design enhance my website's performance?</h4>
+                        </div>
+                        <div class="arrow"></div>
+                    </div>
+                    <div class="question-hidden">A well-designed UI/UX can improve website performance by reducing
+                        bounce rates, increasing user engagement, and ultimately leading to higher conversion rates.
+                    </div>
+                </div>
+                <div class="question-card" id="qfour" onclick="display('qfour')">
+                    <div class="question-top">
+                        <div class="main-q">
+
+                            <h4 class="main-question">4. How do you prioritize user accessibility in UI/UX design?</h4>
+                        </div>
+                        <div class="arrow"></div>
+                    </div>
+                    <div class="question-hidden">We follow accessibility standards, ensuring that our designs are
+                        inclusive and cater to users with different abilities. This involves considerations for color
+                        contrast, font size, and navigation.</div>
+                </div>
+                <div class="question-card" id="qfive" onclick="display('qfive')">
+                    <div class="question-top">
+                        <div class="main-q">
+
+                            <h4 class="main-question">5. What tools do you use for UI/UX design?</h4>
+                        </div>
+                        <div class="arrow"></div>
+                    </div>
+                    <div class="question-hidden"> We use a range of tools including Adobe XD, Sketch, Figma for design,
+                        InVision for prototyping, and various analytics tools for user testing and feedback.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <footer class="footer anim">
+        <div class="main-footer segment">
+            <div class="footer-left">
+                <h5 class="heading footer-head topa">Synactics</h5>
+                <p class="footer-info topa">One stop solution for all your digital queries.
+                </p>
+                <div class="social-link-wrapper">
+                    <a href="#">
+                        <div class="link-card topa">
+                            <div class="instagram insta"></div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="link-card topa">
+                            <div class="instagram twitter"></div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="link-card topa">
+                            <div class="instagram pint"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-card topa">
+                    <div class="footer-card-head">Links</div>
+                    <div class="footer-card-links">
+                        <a href="../index.html#about" class="footer-links">About</a>
+                        <a href="../index.html#contact" class="footer-links">Contact</a>
+                        <a href="get-started.html" class="footer-links">Hire Us</a>
+                    </div>
+                </div>
+                <div class="footer-card topa">
+                    <div class="footer-card-head">Services</div>
+                    <div class="footer-card-links">
+                        <a href="#" class="footer-links">Web Development</a>
+                        <a href="graphics-designing.html" class="footer-links">Graphics Designing</a>
+                        <a href="seo.html" class="footer-links">SEO</a>
+                        <a href="ui-ux.html" class="footer-links">UI/UX</a>
+                        <a href="content-writing.html" class="footer-links">Content Writing</a>
+                        <a href="digital-marketing.html" class="footer-links">Digital Marketing</a>
+                        <a href="web-hosting.html" class="footer-links">Web Hosting</a>
+                        <a href="e-commerce.html" class="footer-links">E-Commerce</a>
+                    </div>
+                </div>
+                <div class="footer-card topa">
+                    <div class="footer-card-head">Contact</div>
+                    <div class="footer-card-links">
+                        <a href="#" class="footer-links">+91 9643606839</a>
+                        <a href="#" class="footer-links">+91 9718282109</a>
+                        <a href="#" class="footer-links">Email: <br>in.synactics@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="after-footer topa">&copy; Powered by Synactics 2024</div>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="../main.js"></script>
+    <script>
+        ScrollReveal({
+            reset: false,
+            distance: '40px',
+            duration: 1000,
+            delay: 400
+        });
+        ScrollReveal().reveal('.anim', { delay: 0, interval: 20, origin: 'bottom', distance: '40px' })
+        ScrollReveal().reveal('.ui-card', { delay: 100, interval: 50, origin: 'bottom', distance: '40px' })
+        ScrollReveal().reveal('.question-card', { delay: 300, interval: 50, origin: 'left' })
+        function linearSearch(element, list) {
+            var found = false;
+            for (var i = 0; i < list.length; i++) {
+                var item = list[i];
+                if (item == element) {
+                    found = true;
+                    break;
+                }
+            }
+            return found;
+        }
+        function showMenu() {
+            var menu = document.querySelector(".mobile-menu");
+            menu.style.transform = 'translateX(0%)';
+        }
+        function hideMenu() {
+            var menu = document.querySelector(".mobile-menu");
+            menu.style.transform = 'translateX(100%)';
+        }
+        function display(id) {
+
+            var element = document.querySelector(`#${id}`);
+            var list = element.classList;
+            console.log(element)
+
+
+            if (linearSearch("activeq", list)) {
+                element.style.height = "4rem";
+                element.classList.remove("activeq")
+            }
+            else {
+                element.style.height = "auto";
+                element.classList.add("activeq")
+            }
+        }
+    </script>
+</body>
+
+</html>

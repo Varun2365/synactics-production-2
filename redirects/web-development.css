@@ -255,6 +255,10 @@ nav {
     background-image: url(../assets/images/ecommerce.svg);
     width: 30%;
 }
+.uiux{
+    background-image: url(../assets/images/ui.svg);
+    width: 30%;
+}
 .hero-head {
     font-size: 3.5rem;
     font-weight: 500;
@@ -542,6 +546,8 @@ nav {
     color: #6e6e6e;
     margin-top: 0.7rem;
     padding: 0 1.5rem;
+    line-height: 2.2rem;
+    /* letter-spacing: 1px; */
 
 }
 
@@ -576,6 +582,16 @@ nav {
 .resp-c2 {
     background-image: url(../assets/images/resp-c2.jpg);
 }
+.ui-res {
+    height: 130%;
+    background-image: url(../assets/images/ui-res.svg);
+    /* background-color: red; */
+}
+.ui-res-2 {
+    height: 130%;
+
+    background-image: url(../assets/images/ui-res-2.svg);
+}
 
 .plans {
     display: flex;
@@ -598,6 +614,15 @@ nav {
     align-items: center;
     margin-top: 4rem;
     width: 100%;
+    flex-wrap: wrap;
+}
+.ui-card-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 .plan-card {
@@ -903,6 +928,44 @@ nav {
     background-image: url(../assets/icons/pint.svg);
 }
 
+.ui-card{
+    flex-basis: 30%;
+    height:13rem;
+    /* background-color: red; */
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 10px 2px rgba(128, 128, 128, 0.322);
+    margin-bottom: 3rem;
+}
+.ui1{
+    background-image: url(../assets/images/ui1.jpg);
+}
+.ui2{
+    background-image: url(../assets/images/ui2.jpg);
+}
+.ui3{
+    background-image: url(../assets/images/ui3.png);
+}
+.ui4{
+    background-image: url(../assets/images/ui4.jpg);
+}
+.ui5{
+    background-image: url(../assets/images/ui5.jpg);
+}
+.ui6{
+    background-image: url(../assets/images/ui6.jpg);
+}
+.ui7{
+    background-image: url(../assets/images/ui7.jpg);
+}
+.ui8{
+    background-image: url(../assets/images/ui8.jpg);
+}
+.ui9{
+    background-image: url(../assets/images/ui9.jpg);
+}
 .footer-right {
     height: 100%;
     width: 65%;
@@ -1014,6 +1077,10 @@ nav {
     .plans-card-wrapper{
         flex-direction: column;
     }
+    .ui-card{
+        flex-basis: 48%;
+        height: 18rem;
+    }
     .plan-card{
         width: 50%;
         height: auto;
@@ -1038,6 +1105,14 @@ nav {
     nav{
         height: 8vh;
         padding: 0 1rem;
+    }
+    .ui-card-wrapper{
+        align-items: center;
+        justify-content: center;
+    }
+    .ui-card{
+        flex-basis: 90%;
+        height: 23rem;
     }
 }
 @media only screen and (max-width:550px){
