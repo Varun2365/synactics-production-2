@@ -259,6 +259,10 @@ nav {
     background-image: url(../assets/images/ui.svg);
     width: 30%;
 }
+.webHosting{
+    background-image: url(../assets/images/webHosting.svg);
+    width: 30%;
+}
 .hero-head {
     font-size: 3.5rem;
     font-weight: 500;
@@ -688,7 +692,18 @@ nav {
 .ecom3 {
     background-image: url(../assets/images/ecom3.jpg);
 }
-
+.host1 {
+    background-image: url(../assets/images/webHosting.svg);
+}
+.host2 {
+    background-image: url(../assets/images/host2.svg);
+}
+.host3 {
+    background-image: url(../assets/images/host3.svg);
+}
+.hosting{
+    min-height: 70vh;
+}
 .card-info {
     font-family: 'League Spartan';
     color: var(--text-black);
@@ -733,6 +748,7 @@ nav {
     font-size: 1.1rem;
     font-weight: 400;
     color: var(--subhead-color-dark);
+    /* line-height: 25px; */
 }
 
 .cta {
