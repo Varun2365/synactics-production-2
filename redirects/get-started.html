@@ -226,6 +226,16 @@ function validateForm() {
     function reset() {
         var form = document.getElementById("form");
         form.reset();
+        var actives = document.querySelectorAll(".active-card");
+    for(i=0;i<actives.length;i++){
+        if(actives[i].id == "Web Design"){
+            continue;
+        }
+        else{
+
+            actives[i].classList.remove("active-card")
+        }
+    }
     }
 function changeState(entity) {
     console.log(`Clicked ${entity}`)
